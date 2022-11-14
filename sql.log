@@ -1,0 +1,35 @@
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.001) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.001) 
+            SELECT name, type FROM sqlite_master
+            WHERE type in ('table', 'view') AND NOT name='sqlite_sequence'
+            ORDER BY name; args=None; alias=default
+(0.003) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+(0.184) INSERT INTO "kj_student" ("first_name", "last_name") VALUES ('1', '2'); args=['1', '2']; alias=default
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-10-26 07:28:28.870880' AND "django_session"."session_key" = 'r4kquq3zrrh8nop1pe8h57niisfzqsn4') LIMIT 21; args=('2022-10-26 07:28:28.870880', 'r4kquq3zrrh8nop1pe8h57niisfzqsn4'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) SELECT "kj_entry"."id", "kj_entry"."blog_id", "kj_entry"."headline", "kj_entry"."body_text", "kj_entry"."pub_date", "kj_entry"."mod_date", "kj_entry"."number_of_comments", "kj_entry"."number_of_pingbacks", "kj_entry"."rating" FROM "kj_entry" WHERE "kj_entry"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.001) SELECT "kj_author"."id", "kj_author"."name", "kj_author"."email" FROM "kj_author" INNER JOIN "kj_entry_authors" ON ("kj_author"."id" = "kj_entry_authors"."author_id") WHERE "kj_entry_authors"."entry_id" = 1; args=(1,); alias=default
+(0.000) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'kj' AND "django_content_type"."model" = 'entry') LIMIT 21; args=('kj', 'entry'); alias=default
+(0.001) SELECT "kj_blog"."id", "kj_blog"."name", "kj_blog"."tagline" FROM "kj_blog"; args=(); alias=default
+(0.001) SELECT "kj_author"."id", "kj_author"."name", "kj_author"."email" FROM "kj_author"; args=(); alias=default
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-10-26 07:28:30.223044' AND "django_session"."session_key" = 'r4kquq3zrrh8nop1pe8h57niisfzqsn4') LIMIT 21; args=('2022-10-26 07:28:30.223044', 'r4kquq3zrrh8nop1pe8h57niisfzqsn4'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.001) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-10-26 07:28:33.177497' AND "django_session"."session_key" = 'r4kquq3zrrh8nop1pe8h57niisfzqsn4') LIMIT 21; args=('2022-10-26 07:28:33.177497', 'r4kquq3zrrh8nop1pe8h57niisfzqsn4'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "kj_student"; args=(); alias=default
+(0.000) SELECT COUNT(*) AS "__count" FROM "kj_student"; args=(); alias=default
+(0.000) SELECT "kj_student"."id", "kj_student"."first_name", "kj_student"."last_name" FROM "kj_student" ORDER BY "kj_student"."id" DESC; args=(); alias=default
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-10-26 07:28:33.343111' AND "django_session"."session_key" = 'r4kquq3zrrh8nop1pe8h57niisfzqsn4') LIMIT 21; args=('2022-10-26 07:28:33.343111', 'r4kquq3zrrh8nop1pe8h57niisfzqsn4'); alias=default
+(0.000) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.003) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-10-26 07:28:35.653576' AND "django_session"."session_key" = 'r4kquq3zrrh8nop1pe8h57niisfzqsn4') LIMIT 21; args=('2022-10-26 07:28:35.653576', 'r4kquq3zrrh8nop1pe8h57niisfzqsn4'); alias=default
+(0.001) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.000) BEGIN; args=None; alias=default
+(0.001) SELECT "kj_student"."id", "kj_student"."first_name", "kj_student"."last_name" FROM "kj_student" WHERE "kj_student"."id" = 1 LIMIT 21; args=(1,); alias=default
+(0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'kj' AND "django_content_type"."model" = 'student') LIMIT 21; args=('kj', 'student'); alias=default
+(0.002) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2022-10-26 07:28:35.799671' AND "django_session"."session_key" = 'r4kquq3zrrh8nop1pe8h57niisfzqsn4') LIMIT 21; args=('2022-10-26 07:28:35.799671', 'r4kquq3zrrh8nop1pe8h57niisfzqsn4'); alias=default
+(0.002) SELECT "auth_user"."id", "auth_user"."password", "auth_user"."last_login", "auth_user"."is_superuser", "auth_user"."username", "auth_user"."first_name", "auth_user"."last_name", "auth_user"."email", "auth_user"."is_staff", "auth_user"."is_active", "auth_user"."date_joined" FROM "auth_user" WHERE "auth_user"."id" = 1 LIMIT 21; args=(1,); alias=default
